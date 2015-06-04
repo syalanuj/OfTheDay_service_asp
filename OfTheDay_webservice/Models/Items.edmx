@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OfTheDayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="Celebrity">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="nvarchar" MaxLength="1000" />
+          <Property Name="image_url" Type="nvarchar" MaxLength="1000" />
+          <Property Name="source" Type="nvarchar" MaxLength="1000" />
+          <Property Name="created_on" Type="datetime" />
+          <Property Name="upload_on" Type="datetime" />
+          <Property Name="is_uploaded" Type="bit" />
+          <Property Name="like_counter" Type="int" />
+        </EntityType>
+        <EntityType Name="Fittness Model">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="nvarchar" MaxLength="1000" />
+          <Property Name="image_url" Type="nvarchar" MaxLength="1000" />
+          <Property Name="source" Type="nvarchar" MaxLength="1000" />
+          <Property Name="created_on" Type="datetime" />
+          <Property Name="upload_on" Type="datetime" />
+          <Property Name="is_uploaded" Type="bit" />
+          <Property Name="like_counter" Type="int" />
+        </EntityType>
+        <EntityType Name="Laugh">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="nvarchar" MaxLength="1000" />
+          <Property Name="image_url" Type="nvarchar" MaxLength="1000" />
+          <Property Name="source" Type="nvarchar" MaxLength="1000" />
+          <Property Name="created_on" Type="datetime" />
+          <Property Name="upload_on" Type="datetime" />
+          <Property Name="is_uploaded" Type="bit" />
+          <Property Name="like_counter" Type="int" />
+        </EntityType>
+        <EntityType Name="Meme">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="nvarchar" MaxLength="1000" />
+          <Property Name="image_url" Type="nvarchar" MaxLength="1000" />
+          <Property Name="source" Type="nvarchar" MaxLength="1000" />
+          <Property Name="created_on" Type="datetime" />
+          <Property Name="upload_on" Type="datetime" />
+          <Property Name="is_uploaded" Type="bit" />
+          <Property Name="like_counter" Type="int" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="nvarchar" MaxLength="1000" />
+          <Property Name="image_url" Type="nvarchar" MaxLength="1000" />
+          <Property Name="source" Type="nvarchar" MaxLength="1000" />
+          <Property Name="created_on" Type="datetime" />
+          <Property Name="upload_on" Type="datetime" />
+          <Property Name="is_uploaded" Type="bit" />
+          <Property Name="like_counter" Type="int" />
+        </EntityType>
+        <EntityType Name="Quote">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="nvarchar" MaxLength="1000" />
+          <Property Name="image_url" Type="nvarchar" MaxLength="1000" />
+          <Property Name="author" Type="nvarchar" MaxLength="1000" />
+          <Property Name="created_on" Type="datetime" />
+          <Property Name="upload_on" Type="datetime" />
+          <Property Name="is_uploaded" Type="bit" />
+          <Property Name="like_counter" Type="int" />
+        </EntityType>
+        <EntityType Name="Recipe">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="nvarchar" MaxLength="1000" />
+          <Property Name="image_url" Type="nvarchar" MaxLength="1000" />
+          <Property Name="source" Type="nvarchar" MaxLength="1000" />
+          <Property Name="created_on" Type="datetime" />
+          <Property Name="upload_on" Type="datetime" />
+          <Property Name="is_uploaded" Type="bit" />
+          <Property Name="like_counter" Type="int" />
+        </EntityType>
+        <EntityType Name="Video Clip">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="nvarchar" MaxLength="1000" />
+          <Property Name="image_url" Type="nvarchar" MaxLength="1000" />
+          <Property Name="source" Type="nvarchar" MaxLength="1000" />
+          <Property Name="created_on" Type="datetime" />
+          <Property Name="upload_on" Type="datetime" />
+          <Property Name="is_uploaded" Type="bit" />
+          <Property Name="like_counter" Type="int" />
+        </EntityType>
+        <EntityType Name="Word">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="nvarchar" MaxLength="1000" />
+          <Property Name="image_url" Type="nvarchar" MaxLength="1000" />
+          <Property Name="source" Type="nvarchar" MaxLength="1000" />
+          <Property Name="created_on" Type="datetime" />
+          <Property Name="upload_on" Type="datetime" />
+          <Property Name="is_uploaded" Type="bit" />
+          <Property Name="like_counter" Type="int" />
+        </EntityType>
+        <EntityContainer Name="OfTheDayModelStoreContainer">
+          <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Celebrity" EntityType="Self.Celebrity" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Fittness Model" EntityType="Self.Fittness Model" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Laugh" EntityType="Self.Laugh" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Meme" EntityType="Self.Meme" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Quote" EntityType="Self.Quote" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Recipe" EntityType="Self.Recipe" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Video Clip" EntityType="Self.Video Clip" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Word" EntityType="Self.Word" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OfTheDayModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Celebrity">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="image_url" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="created_on" Type="DateTime" Precision="3" />
+          <Property Name="upload_on" Type="DateTime" Precision="3" />
+          <Property Name="is_uploaded" Type="Boolean" />
+          <Property Name="like_counter" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Fittness_Model">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="image_url" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="created_on" Type="DateTime" Precision="3" />
+          <Property Name="upload_on" Type="DateTime" Precision="3" />
+          <Property Name="is_uploaded" Type="Boolean" />
+          <Property Name="like_counter" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Laugh">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="image_url" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="created_on" Type="DateTime" Precision="3" />
+          <Property Name="upload_on" Type="DateTime" Precision="3" />
+          <Property Name="is_uploaded" Type="Boolean" />
+          <Property Name="like_counter" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Meme">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="image_url" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="created_on" Type="DateTime" Precision="3" />
+          <Property Name="upload_on" Type="DateTime" Precision="3" />
+          <Property Name="is_uploaded" Type="Boolean" />
+          <Property Name="like_counter" Type="Int32" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="image_url" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="created_on" Type="DateTime" Precision="3" />
+          <Property Name="upload_on" Type="DateTime" Precision="3" />
+          <Property Name="is_uploaded" Type="Boolean" />
+          <Property Name="like_counter" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Quote">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="image_url" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="author" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="created_on" Type="DateTime" Precision="3" />
+          <Property Name="upload_on" Type="DateTime" Precision="3" />
+          <Property Name="is_uploaded" Type="Boolean" />
+          <Property Name="like_counter" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Recipe">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="image_url" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="created_on" Type="DateTime" Precision="3" />
+          <Property Name="upload_on" Type="DateTime" Precision="3" />
+          <Property Name="is_uploaded" Type="Boolean" />
+          <Property Name="like_counter" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Video_Clip">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="image_url" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="created_on" Type="DateTime" Precision="3" />
+          <Property Name="upload_on" Type="DateTime" Precision="3" />
+          <Property Name="is_uploaded" Type="Boolean" />
+          <Property Name="like_counter" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Word">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="image_url" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="source" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="created_on" Type="DateTime" Precision="3" />
+          <Property Name="upload_on" Type="DateTime" Precision="3" />
+          <Property Name="is_uploaded" Type="Boolean" />
+          <Property Name="like_counter" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="OfTheDayEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="Celebrities" EntityType="Self.Celebrity" />
+          <EntitySet Name="Fittness_Models" EntityType="Self.Fittness_Model" />
+          <EntitySet Name="Laughs" EntityType="Self.Laugh" />
+          <EntitySet Name="Memes" EntityType="Self.Meme" />
+          <EntitySet Name="News" EntityType="Self.News" />
+          <EntitySet Name="Quotes" EntityType="Self.Quote" />
+          <EntitySet Name="Recipes" EntityType="Self.Recipe" />
+          <EntitySet Name="Video_Clips" EntityType="Self.Video_Clip" />
+          <EntitySet Name="Words" EntityType="Self.Word" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OfTheDayModelStoreContainer" CdmEntityContainer="OfTheDayEntities">
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="OfTheDayModel.Category">
+              <MappingFragment StoreEntitySet="Categories">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Celebrities">
+            <EntityTypeMapping TypeName="OfTheDayModel.Celebrity">
+              <MappingFragment StoreEntitySet="Celebrity">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="created_on" ColumnName="created_on" />
+                <ScalarProperty Name="upload_on" ColumnName="upload_on" />
+                <ScalarProperty Name="is_uploaded" ColumnName="is_uploaded" />
+                <ScalarProperty Name="like_counter" ColumnName="like_counter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Fittness_Models">
+            <EntityTypeMapping TypeName="OfTheDayModel.Fittness_Model">
+              <MappingFragment StoreEntitySet="Fittness Model">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="created_on" ColumnName="created_on" />
+                <ScalarProperty Name="upload_on" ColumnName="upload_on" />
+                <ScalarProperty Name="is_uploaded" ColumnName="is_uploaded" />
+                <ScalarProperty Name="like_counter" ColumnName="like_counter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Laughs">
+            <EntityTypeMapping TypeName="OfTheDayModel.Laugh">
+              <MappingFragment StoreEntitySet="Laugh">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="created_on" ColumnName="created_on" />
+                <ScalarProperty Name="upload_on" ColumnName="upload_on" />
+                <ScalarProperty Name="is_uploaded" ColumnName="is_uploaded" />
+                <ScalarProperty Name="like_counter" ColumnName="like_counter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Memes">
+            <EntityTypeMapping TypeName="OfTheDayModel.Meme">
+              <MappingFragment StoreEntitySet="Meme">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="created_on" ColumnName="created_on" />
+                <ScalarProperty Name="upload_on" ColumnName="upload_on" />
+                <ScalarProperty Name="is_uploaded" ColumnName="is_uploaded" />
+                <ScalarProperty Name="like_counter" ColumnName="like_counter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="News">
+            <EntityTypeMapping TypeName="OfTheDayModel.News">
+              <MappingFragment StoreEntitySet="News">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="created_on" ColumnName="created_on" />
+                <ScalarProperty Name="upload_on" ColumnName="upload_on" />
+                <ScalarProperty Name="is_uploaded" ColumnName="is_uploaded" />
+                <ScalarProperty Name="like_counter" ColumnName="like_counter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Quotes">
+            <EntityTypeMapping TypeName="OfTheDayModel.Quote">
+              <MappingFragment StoreEntitySet="Quote">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="author" ColumnName="author" />
+                <ScalarProperty Name="created_on" ColumnName="created_on" />
+                <ScalarProperty Name="upload_on" ColumnName="upload_on" />
+                <ScalarProperty Name="is_uploaded" ColumnName="is_uploaded" />
+                <ScalarProperty Name="like_counter" ColumnName="like_counter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Recipes">
+            <EntityTypeMapping TypeName="OfTheDayModel.Recipe">
+              <MappingFragment StoreEntitySet="Recipe">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="created_on" ColumnName="created_on" />
+                <ScalarProperty Name="upload_on" ColumnName="upload_on" />
+                <ScalarProperty Name="is_uploaded" ColumnName="is_uploaded" />
+                <ScalarProperty Name="like_counter" ColumnName="like_counter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Video_Clips">
+            <EntityTypeMapping TypeName="OfTheDayModel.Video_Clip">
+              <MappingFragment StoreEntitySet="Video Clip">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="created_on" ColumnName="created_on" />
+                <ScalarProperty Name="upload_on" ColumnName="upload_on" />
+                <ScalarProperty Name="is_uploaded" ColumnName="is_uploaded" />
+                <ScalarProperty Name="like_counter" ColumnName="like_counter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Words">
+            <EntityTypeMapping TypeName="OfTheDayModel.Word">
+              <MappingFragment StoreEntitySet="Word">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="image_url" ColumnName="image_url" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="created_on" ColumnName="created_on" />
+                <ScalarProperty Name="upload_on" ColumnName="upload_on" />
+                <ScalarProperty Name="is_uploaded" ColumnName="is_uploaded" />
+                <ScalarProperty Name="like_counter" ColumnName="like_counter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
